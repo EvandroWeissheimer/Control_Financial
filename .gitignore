@@ -1,0 +1,27 @@
+# Arquivos de configuração sensíveis
+backend/config_db/config.php
+.env
+
+# Dependências do Composer
+vendor/
+
+# Arquivos de log
+*.log
+
+# Cache e arquivos temporários
+cache/
+tmp/
+*.cache
+*.tmp
+
+# Arquivos do IDE
+.vscode/
+.idea/
+
+# Arquivos do sistema operacional
+Thumbs.db
+.DS_Store
+
+# Ignorar arquivos de backup
+*.bak
+*.swp

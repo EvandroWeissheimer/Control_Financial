@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Controle Financeiro</title>
+    <link href="../css/styles.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Dashboard</h1>
+        
+        <!-- Resumo Financeiro -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-white bg-success mb-3">
+                    <div class="card-header">Receitas</div>
+                    <div class="card-body">
+                        <h5 class="card-title">R$ 0,00</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-danger mb-3">
+                    <div class="card-header">Despesas</div>
+                    <div class="card-body">
+                        <h5 class="card-title">R$ 0,00</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-info mb-3">
+                    <div class="card-header">Saldo</div>
+                    <div class="card-body">
+                        <h5 class="card-title">R$ 0,00</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Formulário para Adicionar Transação -->
+        <div class="row">
+            <div class="col-md-12">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label for="data">Data</label>
+                            <input type="date" class="form-control" id="data" required>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="descricao">Descrição</label>
+                            <input type="text" class="form-control" id="descricao" required>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="valor">Valor</label>
+                            <input type="number" class="form-control" id="valor" required>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="categoria">Categoria</label>
+                            <select class="form-control" id="categoria" required>
+                                <option>Alimentação</option>
+                                <option>Transporte</option>
+                                <option>Lazer</option>
+                                <option>Outros</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Adicionar</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Lista de Transações -->
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Descrição</th>
+                            <th>Valor</th>
+                            <th>Categoria</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Transações serão listadas aqui -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Gráficos -->
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h3>Gráficos</h3>
+                <!-- Gráficos serão exibidos aqui -->
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
